@@ -1,0 +1,25 @@
+<!-- registro.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Registro de Producto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Presupuesto</ion-label>
+    <ion-input type="number" [(ngModel)]="nuevoProducto.presupuesto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Unidad</ion-label>
+    <ion-input type="text" [(ngModel)]="nuevoProducto.unidad"></ion-input>
+  </ion-item>
+
+  <!-- Agrega más campos para los detalles del producto como descripción, cantidad, etc. -->
+
+  <ion-button expand="block" (click)="guardarProducto()">Guardar Producto</ion-button>
+</ion-content>
